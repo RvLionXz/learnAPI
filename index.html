@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Data Wilayah</title>
+    <style>
+        body {
+            text-align: center;
+        }
+
+        
+        #searchBar {
+            width: 40vh;
+            padding: 0.7vh;
+            border-radius: 20px;
+            margin-bottom: 20px;
+        }
+
+        .table-container {
+            display: flex;
+            justify-content: center;
+        }
+        table {
+            width: 80%;
+            border-collapse: collapse;
+        }
+        th, td {
+            border: 1px solid #dddddd;
+            text-align: left;
+            padding: 8px;
+        }
+        tr:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+    </style>
+</head>
+<body>
+    <h1>Data Wilayah</h1>
+
+    <div class="container">
+        <!-- Search Bar -->
+         <div class="search">
+             <input type="text" id="searchBar" placeholder="Cari data..." oninput="searchData()" />
+         </div>
+    
+    
+        <!-- Table -->
+        <div class="table-container">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Provinsi</th>
+                        <th>Kabupaten</th>
+                        <th>Kecamatan</th>
+                        <th>Desa</th>
+                    </tr>
+                </thead>
+                <tbody id="tableBody"></tbody>
+            </table>
+        </div>
+    </div>
+    
+    
+    <script src="script.js"></script>
+</body>
+</html>
